@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fredericka+the+Great&display=swap");
+.center-of-parent, .needle:before, .needle:after, .ashokaChakra:after, .ashokaChakra {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body{
+    margin:0;
+}
+#IndianFlag {
+  background: #fff;
+}
+#IndianFlag > div {
+  height: 262px;
+  position: relative;
+}
+
+.saffron {
+  background: #F92;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKZ0WUdLr2pr0Mo0hfqcm-CR99xmqkgq01g&usqp=CAU");
+  background-blend-mode: screen;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.green {
+  background: #128802;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKZ0WUdLr2pr0Mo0hfqcm-CR99xmqkgq01g&usqp=CAU");
+  background-blend-mode: screen;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.white {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.wishes {
+  margin-right: 5px;
+  padding: 20px;
+  color: rgba(0, 0, 136, 0.83);
+  text-transform: capitalize;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.ashokaChakra {
+  width: 170px;
+  height: 170px;
+  border: 10px solid #008;
+  border-radius: 50%;
+  animation: rotate 30s infinite linear;
+}
+.ashokaChakra:after {
+  content: "";
+  background: #008;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.needle {
+  margin-top: 85px;
+}
+.needle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 50px solid #008;
+  top: -120px;
+}
+.needle:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 25px solid #008;
+  top: -45px;
+}
+
+.dot {
+  background: #008;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.needle.spoke-1 {
+  transform: rotate(-15deg);
+}
+
+.needle.spoke-2 {
+  transform: rotate(-30deg);
+}
+
+.needle.spoke-3 {
+  transform: rotate(-45deg);
+}
+
+.needle.spoke-4 {
+  transform: rotate(-60deg);
+}
+
+.needle.spoke-5 {
+  transform: rotate(-75deg);
+}
+
+.needle.spoke-6 {
+  transform: rotate(-90deg);
+}
+
+.needle.spoke-7 {
+  transform: rotate(-105deg);
+}
+
+.needle.spoke-8 {
+  transform: rotate(-120deg);
+}
+
+.needle.spoke-9 {
+  transform: rotate(-135deg);
+}
+
+.needle.spoke-10 {
+  transform: rotate(-150deg);
+}
+
+.needle.spoke-11 {
+  transform: rotate(-165deg);
+}
+
+.needle.spoke-12 {
+  transform: rotate(-180deg);
+}
+
+.needle.spoke-13 {
+  transform: rotate(-195deg);
+}
+
+.needle.spoke-14 {
+  transform: rotate(-210deg);
+}
+
+.needle.spoke-15 {
+  transform: rotate(-225deg);
+}
+
+.needle.spoke-16 {
+  transform: rotate(-240deg);
+}
+
+.needle.spoke-17 {
+  transform: rotate(-255deg);
+}
+
+.needle.spoke-18 {
+  transform: rotate(-270deg);
+}
+
+.needle.spoke-19 {
+  transform: rotate(-285deg);
+}
+
+.needle.spoke-20 {
+  transform: rotate(-300deg);
+}
+
+.needle.spoke-21 {
+  transform: rotate(-315deg);
+}
+
+.needle.spoke-22 {
+  transform: rotate(-330deg);
+}
+
+.needle.spoke-23 {
+  transform: rotate(-345deg);
+}
+
+.needle.spoke-24 {
+  transform: rotate(-360deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 720px) {
+  .wishes {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wishes {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .wishes {
+    font-size: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

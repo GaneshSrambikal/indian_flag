@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fredericka+the+Great&display=swap');
+// font-family: 'Berkshire Swash', cursive;
+// font-family: 'Fredericka the Great', cursive;
+.center-of-parent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#IndianFlag {
+  background: #fff;
+  > div {
+    height: 231px;
+    position: relative;
+  }
+}
+
+.saffron {
+  background: #F92;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKZ0WUdLr2pr0Mo0hfqcm-CR99xmqkgq01g&usqp=CAU');
+  background-blend-mode: screen;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.green {
+  background: #128802;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKZ0WUdLr2pr0Mo0hfqcm-CR99xmqkgq01g&usqp=CAU');
+  background-blend-mode: screen;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  // transform: rotate(180deg);
+}
+.white{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+.wishes{
+  margin-right:5px;
+  padding:20px;
+  color:rgba(0, 0, 136, 0.83);
+  text-transform: capitalize;
+  font-family: 'Berkshire Swash', cursive;
+  // font-family: 'Fredericka the Great', cursive;
+  font-size:2em;
+  line-height: 1.5em;
+  
+}
+.ashokaChakra {
+  width: 170px;
+  height: 170px;
+  border: 10px solid #008;
+  @extend .center-of-parent;
+  border-radius: 50%;
+  animation: rotate 30s infinite linear;
+  &:after {
+    content: '';
+    background: #008;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    @extend .center-of-parent;
+  }
+}
+
+.needle {
+  margin-top: 85px;
+  &:after {
+    content: '';
+    @extend .center-of-parent;
+    width: 0; 
+    height: 0; 
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 50px solid #008;
+    top: -120px;
+  }
+  &:before {
+    content: '';
+    @extend .center-of-parent;
+    width: 0; 
+    height: 0; 
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 25px solid #008;
+    top: -45px;
+  }
+}
+
+.dot {
+  background: #008;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+@for $i from 1 through 24 {
+  .needle.spoke-#{$i} {
+    transform: rotate(#{($i * -15)}deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:720px){
+  .wishes{
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width:550px){
+  .wishes{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:350px){
+  .wishes{
+    font-size: 0.5em;
+  }
+}
