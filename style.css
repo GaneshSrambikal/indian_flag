@@ -217,7 +217,7 @@ body{
 }
 @media screen and (max-width: 450px) {
   .wishes {
-    display: none;
+    font-size: 0.5em;
   }
   
 }
