@@ -215,10 +215,11 @@ body{
     font-size: 1em;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .wishes {
-    font-size: 0.5em;
+    display: none;
   }
+  
 }
 
 /*# sourceMappingURL=style.css.map */
